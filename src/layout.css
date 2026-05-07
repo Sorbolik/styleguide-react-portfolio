@@ -1,0 +1,69 @@
+/* Layout verticale generico */
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Contenuto che cresce e scrolla */
+.layout__content {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Shell Container: gestisce padding laterale e centering della griglia */
+.shell-container {
+  width: 100%;
+  margin: 0 auto;
+  padding-inline: 100px;
+  box-sizing: border-box;
+}
+
+/* Tablet: padding ridotto */
+@media (max-width: 1024px) {
+  .shell-container {
+    padding-inline: 32px;
+  }
+}
+
+/* Mobile: padding piccolo */
+@media (max-width: 768px) {
+  .shell-container {
+    padding-inline: 16px;
+  }
+}
+
+/* Small mobile: padding minimo */
+@media (max-width: 480px) {
+  .shell-container {
+    padding-inline: 12px;
+  }
+}
+
+/* Alias per compatibilità */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-inline: 40px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding-inline: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-inline: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding-inline: 12px;
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "@sergio/styleguide",
+  "version": "0.0.1",
+  "main": "src/index.css",
+  "style": "src/index.css",
+  "type": "module",
+  "files": [
+    "src"
+  ]
+}
